@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		CA9237EE243857B300810147 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9237EC243857B300810147 /* Main.storyboard */; };
 		CA9237F0243857B600810147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9237EF243857B600810147 /* Assets.xcassets */; };
 		CA9237F3243857B600810147 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9237F1243857B600810147 /* LaunchScreen.storyboard */; };
+		CA9237FC24386E4600810147 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA9237FB24386E4600810147 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA9237FC24386E4600810147 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = SingSong;
+			packageProductDependencies = (
+				CA9237FB24386E4600810147 /* IQKeyboardManagerSwift */,
+			);
 			productName = SingSong;
 			productReference = CA9237E3243857B300810147 /* SingSong.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = CA9237DA243857B300810147;
+			packageReferences = (
+				CA9237FA24386E4600810147 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = CA9237E4243857B300810147 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -338,6 +346,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA9237FA24386E4600810147 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA9237FB24386E4600810147 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA9237FA24386E4600810147 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CA9237DB243857B300810147 /* Project object */;
 }
