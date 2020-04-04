@@ -18,6 +18,7 @@
 		CA923804243872D800810147 /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = CA923803243872D800810147 /* Rswift */; };
 		CA923807243874B700810147 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CA923806243874B700810147 /* SnapKit */; };
 		CA92380C24387F9600810147 /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA92380B24387F9600810147 /* ReSwift */; };
+		CA92380F243880C600810147 /* ReSwift-Thunk in Frameworks */ = {isa = PBXBuildFile; productRef = CA92380E243880C600810147 /* ReSwift-Thunk */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA92380F243880C600810147 /* ReSwift-Thunk in Frameworks */,
 				CA923807243874B700810147 /* SnapKit in Frameworks */,
 				CA9237FC24386E4600810147 /* IQKeyboardManagerSwift in Frameworks */,
 				CA923804243872D800810147 /* Rswift in Frameworks */,
@@ -109,6 +111,7 @@
 				CA923803243872D800810147 /* Rswift */,
 				CA923806243874B700810147 /* SnapKit */,
 				CA92380B24387F9600810147 /* ReSwift */,
+				CA92380E243880C600810147 /* ReSwift-Thunk */,
 			);
 			productName = SingSong;
 			productReference = CA9237E3243857B300810147 /* SingSong.app */;
@@ -143,6 +146,7 @@
 				CA923802243872D800810147 /* XCRemoteSwiftPackageReference "R.swift" */,
 				CA923805243874B700810147 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				CA92380A24387F9600810147 /* XCRemoteSwiftPackageReference "ReSwift" */,
+				CA92380D243880C600810147 /* XCRemoteSwiftPackageReference "ReSwift-Thunk" */,
 			);
 			productRefGroup = CA9237E4243857B300810147 /* Products */;
 			projectDirPath = "";
@@ -447,6 +451,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		CA92380D243880C600810147 /* XCRemoteSwiftPackageReference "ReSwift-Thunk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReSwift/ReSwift-Thunk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -469,6 +481,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CA92380A24387F9600810147 /* XCRemoteSwiftPackageReference "ReSwift" */;
 			productName = ReSwift;
+		};
+		CA92380E243880C600810147 /* ReSwift-Thunk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA92380D243880C600810147 /* XCRemoteSwiftPackageReference "ReSwift-Thunk" */;
+			productName = "ReSwift-Thunk";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
