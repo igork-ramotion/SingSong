@@ -14,6 +14,8 @@
 		CA9237F0243857B600810147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9237EF243857B600810147 /* Assets.xcassets */; };
 		CA9237F3243857B600810147 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9237F1243857B600810147 /* LaunchScreen.storyboard */; };
 		CA9237FC24386E4600810147 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA9237FB24386E4600810147 /* IQKeyboardManagerSwift */; };
+		CA9238012438729400810147 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9238002438729400810147 /* R.generated.swift */; };
+		CA923804243872D800810147 /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = CA923803243872D800810147 /* Rswift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,7 @@
 		CA9237EF243857B600810147 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA9237F2243857B600810147 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA9237F4243857B600810147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA9238002438729400810147 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +36,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA9237FC24386E4600810147 /* IQKeyboardManagerSwift in Frameworks */,
+				CA923804243872D800810147 /* Rswift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +62,7 @@
 		CA9237E5243857B300810147 /* SingSong */ = {
 			isa = PBXGroup;
 			children = (
+				CA9237FF2438718F00810147 /* Resources */,
 				CA9237E6243857B300810147 /* AppDelegate.swift */,
 				CA9237E8243857B300810147 /* SceneDelegate.swift */,
 				CA9237EA243857B300810147 /* ViewController.swift */,
@@ -69,6 +74,14 @@
 			path = SingSong;
 			sourceTree = "<group>";
 		};
+		CA9237FF2438718F00810147 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA9238002438729400810147 /* R.generated.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,6 +89,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA9237F7243857B600810147 /* Build configuration list for PBXNativeTarget "SingSong" */;
 			buildPhases = (
+				CA9237FE2438713C00810147 /* R.swift */,
 				CA9237DF243857B300810147 /* Sources */,
 				CA9237E0243857B300810147 /* Frameworks */,
 				CA9237E1243857B300810147 /* Resources */,
@@ -87,6 +101,7 @@
 			name = SingSong;
 			packageProductDependencies = (
 				CA9237FB24386E4600810147 /* IQKeyboardManagerSwift */,
+				CA923803243872D800810147 /* Rswift */,
 			);
 			productName = SingSong;
 			productReference = CA9237E3243857B300810147 /* SingSong.app */;
@@ -118,6 +133,7 @@
 			mainGroup = CA9237DA243857B300810147;
 			packageReferences = (
 				CA9237FA24386E4600810147 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				CA923802243872D800810147 /* XCRemoteSwiftPackageReference "R.swift" */,
 			);
 			productRefGroup = CA9237E4243857B300810147 /* Products */;
 			projectDirPath = "";
@@ -141,6 +157,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CA9237FE2438713C00810147 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/SingSong/Resources/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if mint list | grep -q 'R.swift'; then\n  mint run R.swift rswift generate \"$SRCROOT/SingSong/Resources/R.generated.swift\"\nelse\n  echo \"error: R.swift not installed; run 'mint bootstrap' to install\"\n  return -1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CA9237DF243857B300810147 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -149,6 +188,7 @@
 				CA9237EB243857B300810147 /* ViewController.swift in Sources */,
 				CA9237E7243857B300810147 /* AppDelegate.swift in Sources */,
 				CA9237E9243857B300810147 /* SceneDelegate.swift in Sources */,
+				CA9238012438729400810147 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +396,14 @@
 				minimumVersion = 6.5.5;
 			};
 		};
+		CA923802243872D800810147 /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -363,6 +411,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CA9237FA24386E4600810147 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		CA923803243872D800810147 /* Rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA923802243872D800810147 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = Rswift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
