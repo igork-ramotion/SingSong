@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CA9237E7243857B300810147 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9237E6243857B300810147 /* AppDelegate.swift */; };
-		CA9237E9243857B300810147 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9237E8243857B300810147 /* SceneDelegate.swift */; };
 		CA9237EB243857B300810147 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9237EA243857B300810147 /* ViewController.swift */; };
-		CA9237EE243857B300810147 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9237EC243857B300810147 /* Main.storyboard */; };
 		CA9237F0243857B600810147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9237EF243857B600810147 /* Assets.xcassets */; };
 		CA9237F3243857B600810147 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9237F1243857B600810147 /* LaunchScreen.storyboard */; };
 		CA9237FC24386E4600810147 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA9237FB24386E4600810147 /* IQKeyboardManagerSwift */; };
@@ -19,18 +17,22 @@
 		CA923807243874B700810147 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CA923806243874B700810147 /* SnapKit */; };
 		CA92380C24387F9600810147 /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA92380B24387F9600810147 /* ReSwift */; };
 		CA92380F243880C600810147 /* ReSwift-Thunk in Frameworks */ = {isa = PBXBuildFile; productRef = CA92380E243880C600810147 /* ReSwift-Thunk */; };
+		CA9238122438815B00810147 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA9238112438815B00810147 /* RxSwift */; };
+		CA9238142438815B00810147 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = CA9238132438815B00810147 /* RxCocoa */; };
+		CA9238172439E1F000810147 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9238162439E1F000810147 /* ViewController2.swift */; };
+		CA9238192439E22700810147 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9238182439E22700810147 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA9237E3243857B300810147 /* SingSong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingSong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9237E6243857B300810147 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA9237E8243857B300810147 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CA9237EA243857B300810147 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CA9237ED243857B300810147 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA9237EF243857B600810147 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA9237F2243857B600810147 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA9237F4243857B600810147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA9238002438729400810147 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		CA9238162439E1F000810147 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		CA9238182439E22700810147 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,8 +40,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA9238122438815B00810147 /* RxSwift in Frameworks */,
 				CA92380F243880C600810147 /* ReSwift-Thunk in Frameworks */,
 				CA923807243874B700810147 /* SnapKit in Frameworks */,
+				CA9238142438815B00810147 /* RxCocoa in Frameworks */,
 				CA9237FC24386E4600810147 /* IQKeyboardManagerSwift in Frameworks */,
 				CA923804243872D800810147 /* Rswift in Frameworks */,
 				CA92380C24387F9600810147 /* ReSwift in Frameworks */,
@@ -69,11 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				CA9237FF2438718F00810147 /* Resources */,
+				CA9238152439E19700810147 /* TabBar */,
 				CA9237E6243857B300810147 /* AppDelegate.swift */,
-				CA9237E8243857B300810147 /* SceneDelegate.swift */,
-				CA9237EA243857B300810147 /* ViewController.swift */,
-				CA9237EC243857B300810147 /* Main.storyboard */,
-				CA9237EF243857B600810147 /* Assets.xcassets */,
 				CA9237F1243857B600810147 /* LaunchScreen.storyboard */,
 				CA9237F4243857B600810147 /* Info.plist */,
 			);
@@ -84,8 +85,19 @@
 			isa = PBXGroup;
 			children = (
 				CA9238002438729400810147 /* R.generated.swift */,
+				CA9237EF243857B600810147 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CA9238152439E19700810147 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				CA9237EA243857B300810147 /* ViewController.swift */,
+				CA9238162439E1F000810147 /* ViewController2.swift */,
+				CA9238182439E22700810147 /* MainTabBarController.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +124,8 @@
 				CA923806243874B700810147 /* SnapKit */,
 				CA92380B24387F9600810147 /* ReSwift */,
 				CA92380E243880C600810147 /* ReSwift-Thunk */,
+				CA9238112438815B00810147 /* RxSwift */,
+				CA9238132438815B00810147 /* RxCocoa */,
 			);
 			productName = SingSong;
 			productReference = CA9237E3243857B300810147 /* SingSong.app */;
@@ -147,6 +161,7 @@
 				CA923805243874B700810147 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				CA92380A24387F9600810147 /* XCRemoteSwiftPackageReference "ReSwift" */,
 				CA92380D243880C600810147 /* XCRemoteSwiftPackageReference "ReSwift-Thunk" */,
+				CA9238102438815B00810147 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = CA9237E4243857B300810147 /* Products */;
 			projectDirPath = "";
@@ -164,7 +179,6 @@
 			files = (
 				CA9237F3243857B600810147 /* LaunchScreen.storyboard in Resources */,
 				CA9237F0243857B600810147 /* Assets.xcassets in Resources */,
-				CA9237EE243857B300810147 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,8 +231,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA9237EB243857B300810147 /* ViewController.swift in Sources */,
+				CA9238172439E1F000810147 /* ViewController2.swift in Sources */,
+				CA9238192439E22700810147 /* MainTabBarController.swift in Sources */,
 				CA9237E7243857B300810147 /* AppDelegate.swift in Sources */,
-				CA9237E9243857B300810147 /* SceneDelegate.swift in Sources */,
 				CA9238012438729400810147 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,14 +241,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CA9237EC243857B300810147 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CA9237ED243857B300810147 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CA9237F1243857B600810147 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -459,6 +466,14 @@
 				minimumVersion = 1.2.0;
 			};
 		};
+		CA9238102438815B00810147 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -486,6 +501,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CA92380D243880C600810147 /* XCRemoteSwiftPackageReference "ReSwift-Thunk" */;
 			productName = "ReSwift-Thunk";
+		};
+		CA9238112438815B00810147 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA9238102438815B00810147 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		CA9238132438815B00810147 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA9238102438815B00810147 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
