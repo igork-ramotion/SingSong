@@ -21,7 +21,34 @@
 		CA9238142438815B00810147 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = CA9238132438815B00810147 /* RxCocoa */; };
 		CA9238172439E1F000810147 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9238162439E1F000810147 /* ViewController2.swift */; };
 		CA9238192439E22700810147 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9238182439E22700810147 /* MainTabBarController.swift */; };
+		CA92382324417ACD00810147 /* SingSongCore.h in Headers */ = {isa = PBXBuildFile; fileRef = CA92382124417ACD00810147 /* SingSongCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA92382624417ACD00810147 /* SingSongCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA92381F24417ACD00810147 /* SingSongCore.framework */; };
+		CA92382724417ACD00810147 /* SingSongCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA92381F24417ACD00810147 /* SingSongCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA92382424417ACD00810147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA9237DB243857B300810147 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA92381E24417ACD00810147;
+			remoteInfo = SingSongCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA92382B24417ACD00810147 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CA92382724417ACD00810147 /* SingSongCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CA9237E3243857B300810147 /* SingSong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingSong.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,6 +60,9 @@
 		CA9238002438729400810147 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		CA9238162439E1F000810147 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		CA9238182439E22700810147 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		CA92381F24417ACD00810147 /* SingSongCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SingSongCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA92382124417ACD00810147 /* SingSongCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingSongCore.h; sourceTree = "<group>"; };
+		CA92382224417ACD00810147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,10 +73,18 @@
 				CA9238122438815B00810147 /* RxSwift in Frameworks */,
 				CA92380F243880C600810147 /* ReSwift-Thunk in Frameworks */,
 				CA923807243874B700810147 /* SnapKit in Frameworks */,
+				CA92382624417ACD00810147 /* SingSongCore.framework in Frameworks */,
 				CA9238142438815B00810147 /* RxCocoa in Frameworks */,
 				CA9237FC24386E4600810147 /* IQKeyboardManagerSwift in Frameworks */,
 				CA923804243872D800810147 /* Rswift in Frameworks */,
 				CA92380C24387F9600810147 /* ReSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA92381C24417ACD00810147 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				CA9237E5243857B300810147 /* SingSong */,
+				CA92382024417ACD00810147 /* SingSongCore */,
 				CA9237E4243857B300810147 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				CA9237E3243857B300810147 /* SingSong.app */,
+				CA92381F24417ACD00810147 /* SingSongCore.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,11 +112,11 @@
 		CA9237E5243857B300810147 /* SingSong */ = {
 			isa = PBXGroup;
 			children = (
-				CA9237FF2438718F00810147 /* Resources */,
-				CA9238152439E19700810147 /* TabBar */,
 				CA9237E6243857B300810147 /* AppDelegate.swift */,
 				CA9237F1243857B600810147 /* LaunchScreen.storyboard */,
 				CA9237F4243857B600810147 /* Info.plist */,
+				CA9237FF2438718F00810147 /* Resources */,
+				CA9238152439E19700810147 /* TabBar */,
 			);
 			path = SingSong;
 			sourceTree = "<group>";
@@ -100,7 +140,27 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		CA92382024417ACD00810147 /* SingSongCore */ = {
+			isa = PBXGroup;
+			children = (
+				CA92382124417ACD00810147 /* SingSongCore.h */,
+				CA92382224417ACD00810147 /* Info.plist */,
+			);
+			path = SingSongCore;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CA92381A24417ACD00810147 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA92382324417ACD00810147 /* SingSongCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		CA9237E2243857B300810147 /* SingSong */ = {
@@ -112,10 +172,12 @@
 				CA9237E0243857B300810147 /* Frameworks */,
 				CA9237E1243857B300810147 /* Resources */,
 				CA923809243875A700810147 /* SwiftLint */,
+				CA92382B24417ACD00810147 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CA92382524417ACD00810147 /* PBXTargetDependency */,
 			);
 			name = SingSong;
 			packageProductDependencies = (
@@ -131,6 +193,24 @@
 			productReference = CA9237E3243857B300810147 /* SingSong.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CA92381E24417ACD00810147 /* SingSongCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA92382824417ACD00810147 /* Build configuration list for PBXNativeTarget "SingSongCore" */;
+			buildPhases = (
+				CA92381A24417ACD00810147 /* Headers */,
+				CA92381B24417ACD00810147 /* Sources */,
+				CA92381C24417ACD00810147 /* Frameworks */,
+				CA92381D24417ACD00810147 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SingSongCore;
+			productName = SingSongCore;
+			productReference = CA92381F24417ACD00810147 /* SingSongCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -142,6 +222,9 @@
 				ORGANIZATIONNAME = "Shota Ito";
 				TargetAttributes = {
 					CA9237E2243857B300810147 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					CA92381E24417ACD00810147 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -168,6 +251,7 @@
 			projectRoot = "";
 			targets = (
 				CA9237E2243857B300810147 /* SingSong */,
+				CA92381E24417ACD00810147 /* SingSongCore */,
 			);
 		};
 /* End PBXProject section */
@@ -179,6 +263,13 @@
 			files = (
 				CA9237F3243857B600810147 /* LaunchScreen.storyboard in Resources */,
 				CA9237F0243857B600810147 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA92381D24417ACD00810147 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +329,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CA92381B24417ACD00810147 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA92382524417ACD00810147 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA92381E24417ACD00810147 /* SingSongCore */;
+			targetProxy = CA92382424417ACD00810147 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CA9237F1243857B600810147 /* LaunchScreen.storyboard */ = {
@@ -402,6 +508,60 @@
 			};
 			name = Release;
 		};
+		CA92382924417ACD00810147 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6769Z85BA2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SingSongCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shota-ito.SingSongCore";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA92382A24417ACD00810147 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6769Z85BA2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SingSongCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shota-ito.SingSongCore";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -419,6 +579,15 @@
 			buildConfigurations = (
 				CA9237F8243857B600810147 /* Debug */,
 				CA9237F9243857B600810147 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA92382824417ACD00810147 /* Build configuration list for PBXNativeTarget "SingSongCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA92382924417ACD00810147 /* Debug */,
+				CA92382A24417ACD00810147 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
