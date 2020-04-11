@@ -1,0 +1,84 @@
+PODS:
+  - DeviceKit (2.3.0)
+  - IQKeyboardManagerSwift (6.5.5)
+  - Parchment (2.3.0)
+  - R.swift (5.1.0):
+    - R.swift.Library (~> 5.1.0)
+  - R.swift.Library (5.1.0)
+  - ReSwift (5.0.0)
+  - ReSwiftThunk (1.2.0):
+    - ReSwift (~> 5.0)
+    - ReSwiftThunk/Core (= 1.2.0)
+  - ReSwiftThunk/Core (1.2.0):
+    - ReSwift (~> 5.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SnapKit (5.0.1)
+  - SwiftLint (0.39.2)
+  - SwiftMessages (7.0.1):
+    - SwiftMessages/App (= 7.0.1)
+  - SwiftMessages/App (7.0.1)
+  - SwiftyUserDefaults (5.0.0)
+  - VegaScrollFlowLayout (1.1)
+  - ViewAnimator (2.7.0)
+
+DEPENDENCIES:
+  - DeviceKit (~> 2.0)
+  - IQKeyboardManagerSwift
+  - Parchment
+  - R.swift
+  - ReSwift
+  - ReSwiftThunk
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
+  - SnapKit (~> 5.0.0)
+  - SwiftLint
+  - SwiftMessages
+  - SwiftyUserDefaults (~> 5.0)
+  - VegaScrollFlowLayout
+  - ViewAnimator
+
+SPEC REPOS:
+  trunk:
+    - DeviceKit
+    - IQKeyboardManagerSwift
+    - Parchment
+    - R.swift
+    - R.swift.Library
+    - ReSwift
+    - ReSwiftThunk
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SnapKit
+    - SwiftLint
+    - SwiftMessages
+    - SwiftyUserDefaults
+    - VegaScrollFlowLayout
+    - ViewAnimator
+
+SPEC CHECKSUMS:
+  DeviceKit: da103891aa928d89f64ea8dd8aca738c5f3d8ac0
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  Parchment: 72a7eb8072454a9500a53dd84776e04fba24e740
+  R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
+  R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
+  ReSwift: 628f1a9b3ee52e3b3ca2a644435472fd77afafe1
+  ReSwiftThunk: 23c8ea9092d9dc94b72005f19352dbd37fa42533
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
+  SwiftMessages: b577dc7043be8b299857ab35bb663dbff6483bd0
+  SwiftyUserDefaults: 33fcb42bd1feb53a37d873feb62c82967db5f7f6
+  VegaScrollFlowLayout: 9158061f29179147755f937c2b21693fc5dbbac3
+  ViewAnimator: 5af1c6f3b310f012bf081259c43717aa54fbae73
+
+PODFILE CHECKSUM: 586a786180bd07fc69c3c3ed7ad351c63ed55772
+
+COCOAPODS: 1.8.4
