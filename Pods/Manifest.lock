@@ -1,5 +1,6 @@
 PODS:
   - DeviceKit (2.3.0)
+  - FoldingCell (5.0.2)
   - IQKeyboardManagerSwift (6.5.5)
   - Parchment (2.3.0)
   - R.swift (5.1.0):
@@ -28,6 +29,7 @@ PODS:
 
 DEPENDENCIES:
   - DeviceKit (~> 2.0)
+  - FoldingCell
   - IQKeyboardManagerSwift
   - Parchment
   - R.swift
@@ -45,6 +47,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - DeviceKit
+    - FoldingCell
     - IQKeyboardManagerSwift
     - Parchment
     - R.swift
@@ -63,6 +66,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   DeviceKit: da103891aa928d89f64ea8dd8aca738c5f3d8ac0
+  FoldingCell: f92eb5fb9842319e7cd08c71533c98408b785099
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
   Parchment: 72a7eb8072454a9500a53dd84776e04fba24e740
   R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
@@ -79,6 +83,6 @@ SPEC CHECKSUMS:
   VegaScrollFlowLayout: 9158061f29179147755f937c2b21693fc5dbbac3
   ViewAnimator: 5af1c6f3b310f012bf081259c43717aa54fbae73
 
-PODFILE CHECKSUM: 586a786180bd07fc69c3c3ed7ad351c63ed55772
+PODFILE CHECKSUM: 83786b424d0b3c6399c050df74b71304c000f02c
 
 COCOAPODS: 1.8.4

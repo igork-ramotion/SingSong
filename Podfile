@@ -35,6 +35,7 @@ target 'SingSong' do
 
   pod "ViewAnimator"
   pod 'VegaScrollFlowLayout'
+  pod 'FoldingCell'
 
 end
 
