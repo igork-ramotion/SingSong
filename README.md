@@ -8,11 +8,6 @@ A song data can be fetchd from database using API.
 ## memo
 
 if song title is long, scroll is enble
-DIsplay
-Defatult : title and artist
-Rate : 
-
-Lang setting in app
 
 # Feature
 
