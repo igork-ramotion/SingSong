@@ -5,7 +5,25 @@
 This is an app songs in your repertory is able to be summarised with your own key in order to sing at Karaoke.
 A song data can be fetchd from database using API.
 
-# Developer memo
+## memo
+
+if song title is long, scroll is enble
+DIsplay
+Defatult : title and artist
+Rate : 
+
+Lang setting in app
+
+# Feature
+
+## Playlist
+- Save a song by using API
+- Categorise songs
+- favourite button
+- key setting button
+
+
+# Libraries
 
 ## Animation
 splash
@@ -29,7 +47,11 @@ https://github.com/SwipeCellKit/SwipeCellKit
 scroll
 https://github.com/ApplikeySolutions/VegaScroll
 
-## Util
+cell
+https://github.com/Ramotion/folding-cell
+
+## Utility
+
 Device
 https://github.com/dennisweissmann/DeviceKit
 
