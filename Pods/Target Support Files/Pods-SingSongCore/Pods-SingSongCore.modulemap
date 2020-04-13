@@ -1,0 +1,6 @@
+framework module Pods_SingSongCore {
+  umbrella header "Pods-SingSongCore-umbrella.h"
+
+  export *
+  module * { export * }
+}
