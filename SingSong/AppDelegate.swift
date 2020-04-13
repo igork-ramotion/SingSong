@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = MainTabBarController()
         window?.makeKeyAndVisible()
+        
+        setupAppearance()
+        
         return true
     }
 }

@@ -8,18 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		A1F89AE722873FE5AC9C8236 /* Pods_SingSongCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0539CCBAFF9FDC393A5669 /* Pods_SingSongCore.framework */; };
+		CA405451244503AB00FE5729 /* AppDelegate+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA405450244503AB00FE5729 /* AppDelegate+Setup.swift */; };
 		CA9237E7243857B300810147 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9237E6243857B300810147 /* AppDelegate.swift */; };
 		CA9237EB243857B300810147 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9237EA243857B300810147 /* ViewController.swift */; };
 		CA9237F0243857B600810147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9237EF243857B600810147 /* Assets.xcassets */; };
 		CA9237F3243857B600810147 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9237F1243857B600810147 /* LaunchScreen.storyboard */; };
-		CA9237FC24386E4600810147 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = CA9237FB24386E4600810147 /* SwiftPackageProductDependency */; };
+		CA9237FC24386E4600810147 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA9237FB24386E4600810147 /* IQKeyboardManagerSwift */; };
 		CA9238012438729400810147 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9238002438729400810147 /* R.generated.swift */; };
-		CA923804243872D800810147 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = CA923803243872D800810147 /* SwiftPackageProductDependency */; };
-		CA923807243874B700810147 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = CA923806243874B700810147 /* SwiftPackageProductDependency */; };
-		CA92380C24387F9600810147 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = CA92380B24387F9600810147 /* SwiftPackageProductDependency */; };
-		CA92380F243880C600810147 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = CA92380E243880C600810147 /* SwiftPackageProductDependency */; };
-		CA9238122438815B00810147 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = CA9238112438815B00810147 /* SwiftPackageProductDependency */; };
-		CA9238142438815B00810147 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = CA9238132438815B00810147 /* SwiftPackageProductDependency */; };
+		CA923804243872D800810147 /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = CA923803243872D800810147 /* Rswift */; };
+		CA923807243874B700810147 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CA923806243874B700810147 /* SnapKit */; };
+		CA92380C24387F9600810147 /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA92380B24387F9600810147 /* ReSwift */; };
+		CA92380F243880C600810147 /* ReSwift-Thunk in Frameworks */ = {isa = PBXBuildFile; productRef = CA92380E243880C600810147 /* ReSwift-Thunk */; };
+		CA9238122438815B00810147 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA9238112438815B00810147 /* RxSwift */; };
+		CA9238142438815B00810147 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = CA9238132438815B00810147 /* RxCocoa */; };
 		CA9238172439E1F000810147 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9238162439E1F000810147 /* ViewController2.swift */; };
 		CA9238192439E22700810147 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9238182439E22700810147 /* MainTabBarController.swift */; };
 		CA92382324417ACD00810147 /* SingSongCore.h in Headers */ = {isa = PBXBuildFile; fileRef = CA92382124417ACD00810147 /* SingSongCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -56,6 +57,7 @@
 		38BE0685DB9719AAC3131740 /* Pods_SingSong.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SingSong.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E55AF50458BCC12F66E8D8 /* Pods-SingSong.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingSong.release.xcconfig"; path = "Target Support Files/Pods-SingSong/Pods-SingSong.release.xcconfig"; sourceTree = "<group>"; };
 		B20C6F171456587BF79DBEE1 /* Pods-SingSong.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingSong.debug.xcconfig"; path = "Target Support Files/Pods-SingSong/Pods-SingSong.debug.xcconfig"; sourceTree = "<group>"; };
+		CA405450244503AB00FE5729 /* AppDelegate+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Setup.swift"; sourceTree = "<group>"; };
 		CA9237E3243857B300810147 /* SingSong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingSong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9237E6243857B300810147 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA9237EA243857B300810147 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,14 +80,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA9238122438815B00810147 /* BuildFile in Frameworks */,
-				CA92380F243880C600810147 /* BuildFile in Frameworks */,
-				CA923807243874B700810147 /* BuildFile in Frameworks */,
+				CA9238122438815B00810147 /* RxSwift in Frameworks */,
+				CA92380F243880C600810147 /* ReSwift-Thunk in Frameworks */,
+				CA923807243874B700810147 /* SnapKit in Frameworks */,
 				CA92382624417ACD00810147 /* SingSongCore.framework in Frameworks */,
-				CA9238142438815B00810147 /* BuildFile in Frameworks */,
-				CA9237FC24386E4600810147 /* BuildFile in Frameworks */,
-				CA923804243872D800810147 /* BuildFile in Frameworks */,
-				CA92380C24387F9600810147 /* BuildFile in Frameworks */,
+				CA9238142438815B00810147 /* RxCocoa in Frameworks */,
+				CA9237FC24386E4600810147 /* IQKeyboardManagerSwift in Frameworks */,
+				CA923804243872D800810147 /* Rswift in Frameworks */,
+				CA92380C24387F9600810147 /* ReSwift in Frameworks */,
 				D1A0C624895D55742AEA3FBE /* Pods_SingSong.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				CA9237E6243857B300810147 /* AppDelegate.swift */,
+				CA405450244503AB00FE5729 /* AppDelegate+Setup.swift */,
 				CA9237F1243857B600810147 /* LaunchScreen.storyboard */,
 				CA9237F4243857B600810147 /* Info.plist */,
 				CA9237FF2438718F00810147 /* Resources */,
@@ -178,7 +181,6 @@
 				E723755B84832081E88D5F27 /* Pods-SingSongCore.debug.xcconfig */,
 				DBE9B5296AC23521B270299C /* Pods-SingSongCore.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -216,13 +218,13 @@
 			);
 			name = SingSong;
 			packageProductDependencies = (
-				CA9237FB24386E4600810147 /* SwiftPackageProductDependency */,
-				CA923803243872D800810147 /* SwiftPackageProductDependency */,
-				CA923806243874B700810147 /* SwiftPackageProductDependency */,
-				CA92380B24387F9600810147 /* SwiftPackageProductDependency */,
-				CA92380E243880C600810147 /* SwiftPackageProductDependency */,
-				CA9238112438815B00810147 /* SwiftPackageProductDependency */,
-				CA9238132438815B00810147 /* SwiftPackageProductDependency */,
+				CA9237FB24386E4600810147 /* IQKeyboardManagerSwift */,
+				CA923803243872D800810147 /* Rswift */,
+				CA923806243874B700810147 /* SnapKit */,
+				CA92380B24387F9600810147 /* ReSwift */,
+				CA92380E243880C600810147 /* ReSwift-Thunk */,
+				CA9238112438815B00810147 /* RxSwift */,
+				CA9238132438815B00810147 /* RxCocoa */,
 			);
 			productName = SingSong;
 			productReference = CA9237E3243857B300810147 /* SingSong.app */;
@@ -275,12 +277,12 @@
 			);
 			mainGroup = CA9237DA243857B300810147;
 			packageReferences = (
-				CA9237FA24386E4600810147 /* RemoteSwiftPackageReference */,
-				CA923802243872D800810147 /* RemoteSwiftPackageReference */,
-				CA923805243874B700810147 /* RemoteSwiftPackageReference */,
-				CA92380A24387F9600810147 /* RemoteSwiftPackageReference */,
-				CA92380D243880C600810147 /* RemoteSwiftPackageReference */,
-				CA9238102438815B00810147 /* RemoteSwiftPackageReference */,
+				CA9237FA24386E4600810147 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				CA923802243872D800810147 /* XCRemoteSwiftPackageReference "R.swift" */,
+				CA923805243874B700810147 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				CA92380A24387F9600810147 /* XCRemoteSwiftPackageReference "ReSwift" */,
+				CA92380D243880C600810147 /* XCRemoteSwiftPackageReference "ReSwift-Thunk" */,
+				CA9238102438815B00810147 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = CA9237E4243857B300810147 /* Products */;
 			projectDirPath = "";
@@ -348,7 +350,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/SingSong/Resources/R.generated.swift",
+				$SRCROOT/SingSong/Resources/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -420,6 +422,7 @@
 			files = (
 				CA9237EB243857B300810147 /* ViewController.swift in Sources */,
 				CA9238172439E1F000810147 /* ViewController2.swift in Sources */,
+				CA405451244503AB00FE5729 /* AppDelegate+Setup.swift in Sources */,
 				CA9238192439E22700810147 /* MainTabBarController.swift in Sources */,
 				CA9237E7243857B300810147 /* AppDelegate.swift in Sources */,
 				CA9238012438729400810147 /* R.generated.swift in Sources */,
@@ -696,7 +699,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CA9237FA24386E4600810147 /* RemoteSwiftPackageReference */ = {
+		CA9237FA24386E4600810147 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
 			requirement = {
@@ -704,7 +707,7 @@
 				minimumVersion = 6.5.5;
 			};
 		};
-		CA923802243872D800810147 /* RemoteSwiftPackageReference */ = {
+		CA923802243872D800810147 /* XCRemoteSwiftPackageReference "R.swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
 			requirement = {
@@ -712,7 +715,7 @@
 				minimumVersion = 5.1.0;
 			};
 		};
-		CA923805243874B700810147 /* RemoteSwiftPackageReference */ = {
+		CA923805243874B700810147 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
 			requirement = {
@@ -720,7 +723,7 @@
 				minimumVersion = 5.0.1;
 			};
 		};
-		CA92380A24387F9600810147 /* RemoteSwiftPackageReference */ = {
+		CA92380A24387F9600810147 /* XCRemoteSwiftPackageReference "ReSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReSwift/ReSwift.git";
 			requirement = {
@@ -728,7 +731,7 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		CA92380D243880C600810147 /* RemoteSwiftPackageReference */ = {
+		CA92380D243880C600810147 /* XCRemoteSwiftPackageReference "ReSwift-Thunk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReSwift/ReSwift-Thunk.git";
 			requirement = {
@@ -736,7 +739,7 @@
 				minimumVersion = 1.2.0;
 			};
 		};
-		CA9238102438815B00810147 /* RemoteSwiftPackageReference */ = {
+		CA9238102438815B00810147 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
 			requirement = {
@@ -747,39 +750,39 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CA9237FB24386E4600810147 /* SwiftPackageProductDependency */ = {
+		CA9237FB24386E4600810147 /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CA9237FA24386E4600810147 /* RemoteSwiftPackageReference */;
+			package = CA9237FA24386E4600810147 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
 		};
-		CA923803243872D800810147 /* SwiftPackageProductDependency */ = {
+		CA923803243872D800810147 /* Rswift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CA923802243872D800810147 /* RemoteSwiftPackageReference */;
+			package = CA923802243872D800810147 /* XCRemoteSwiftPackageReference "R.swift" */;
 			productName = Rswift;
 		};
-		CA923806243874B700810147 /* SwiftPackageProductDependency */ = {
+		CA923806243874B700810147 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CA923805243874B700810147 /* RemoteSwiftPackageReference */;
+			package = CA923805243874B700810147 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		CA92380B24387F9600810147 /* SwiftPackageProductDependency */ = {
+		CA92380B24387F9600810147 /* ReSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CA92380A24387F9600810147 /* RemoteSwiftPackageReference */;
+			package = CA92380A24387F9600810147 /* XCRemoteSwiftPackageReference "ReSwift" */;
 			productName = ReSwift;
 		};
-		CA92380E243880C600810147 /* SwiftPackageProductDependency */ = {
+		CA92380E243880C600810147 /* ReSwift-Thunk */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CA92380D243880C600810147 /* RemoteSwiftPackageReference */;
+			package = CA92380D243880C600810147 /* XCRemoteSwiftPackageReference "ReSwift-Thunk" */;
 			productName = "ReSwift-Thunk";
 		};
-		CA9238112438815B00810147 /* SwiftPackageProductDependency */ = {
+		CA9238112438815B00810147 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CA9238102438815B00810147 /* RemoteSwiftPackageReference */;
+			package = CA9238102438815B00810147 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
 		};
-		CA9238132438815B00810147 /* SwiftPackageProductDependency */ = {
+		CA9238132438815B00810147 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CA9238102438815B00810147 /* RemoteSwiftPackageReference */;
+			package = CA9238102438815B00810147 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
 		};
 /* End XCSwiftPackageProductDependency section */
