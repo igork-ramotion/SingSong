@@ -18,11 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = MainTabBarController()
         window?.makeKeyAndVisible()
-        
+
         IQKeyboardManager.shared.enable = true
-        
+
         setupAppearance()
-        
+
         return true
     }
 }

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SongsViewController.swift
 //  SingSong
 //
 //  Created by Shota Ito on 2020/04/04.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SongsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -17,7 +17,7 @@ class MainTabBarController: UITabBarController {
     }
 
     func initTabBar() {
-        let vc = ViewController()
+        let vc = SongsViewController()
         vc.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 0)
         let nvc = UINavigationController(rootViewController: vc)
 

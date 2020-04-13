@@ -10,7 +10,7 @@
 		A1F89AE722873FE5AC9C8236 /* Pods_SingSongCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0539CCBAFF9FDC393A5669 /* Pods_SingSongCore.framework */; };
 		CA405451244503AB00FE5729 /* AppDelegate+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA405450244503AB00FE5729 /* AppDelegate+Setup.swift */; };
 		CA9237E7243857B300810147 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9237E6243857B300810147 /* AppDelegate.swift */; };
-		CA9237EB243857B300810147 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9237EA243857B300810147 /* ViewController.swift */; };
+		CA9237EB243857B300810147 /* SongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9237EA243857B300810147 /* SongsViewController.swift */; };
 		CA9237F0243857B600810147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9237EF243857B600810147 /* Assets.xcassets */; };
 		CA9237F3243857B600810147 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9237F1243857B600810147 /* LaunchScreen.storyboard */; };
 		CA9237FC24386E4600810147 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA9237FB24386E4600810147 /* IQKeyboardManagerSwift */; };
@@ -60,7 +60,7 @@
 		CA405450244503AB00FE5729 /* AppDelegate+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Setup.swift"; sourceTree = "<group>"; };
 		CA9237E3243857B300810147 /* SingSong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingSong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9237E6243857B300810147 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA9237EA243857B300810147 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA9237EA243857B300810147 /* SongsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsViewController.swift; sourceTree = "<group>"; };
 		CA9237EF243857B600810147 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA9237F2243857B600810147 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA9237F4243857B600810147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 		CA9238152439E19700810147 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				CA9237EA243857B300810147 /* ViewController.swift */,
+				CA9237EA243857B300810147 /* SongsViewController.swift */,
 				CA9238162439E1F000810147 /* ViewController2.swift */,
 				CA9238182439E22700810147 /* MainTabBarController.swift */,
 			);
@@ -420,7 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA9237EB243857B300810147 /* ViewController.swift in Sources */,
+				CA9237EB243857B300810147 /* SongsViewController.swift in Sources */,
 				CA9238172439E1F000810147 /* ViewController2.swift in Sources */,
 				CA405451244503AB00FE5729 /* AppDelegate+Setup.swift in Sources */,
 				CA9238192439E22700810147 /* MainTabBarController.swift in Sources */,
