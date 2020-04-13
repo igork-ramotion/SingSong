@@ -105,6 +105,21 @@ struct R: Rswift.Validatable {
   }
   #endif
 
+  /// This `R.image` struct is generated, and contains static references to 1 images.
+  struct image {
+    /// Image `background`.
+    static let background = Rswift.ImageResource(bundle: R.hostingBundle, name: "background")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "background", bundle: ..., traitCollection: ...)`
+    static func background(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.background, compatibleWith: traitCollection)
+    }
+    #endif
+
+    fileprivate init() {}
+  }
+
   fileprivate struct intern: Rswift.Validatable {
     fileprivate static func validate() throws {
       try _R.validate()

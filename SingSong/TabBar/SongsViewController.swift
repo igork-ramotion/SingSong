@@ -7,12 +7,24 @@
 //
 
 import UIKit
+import SnapKit
 
-class SongsViewController: UIViewController {
+final class SongsViewController: UIViewController {
+
+    private let bgView = UIImageView(image: R.image.background())
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        initViews()
+    }
+
+    private func initViews() {
+        view.addSubview(bgView)
+        bgView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+
     }
 
 }
