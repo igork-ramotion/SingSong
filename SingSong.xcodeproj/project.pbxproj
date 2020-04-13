@@ -10,6 +10,7 @@
 		A1F89AE722873FE5AC9C8236 /* Pods_SingSongCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0539CCBAFF9FDC393A5669 /* Pods_SingSongCore.framework */; };
 		CA405451244503AB00FE5729 /* AppDelegate+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA405450244503AB00FE5729 /* AppDelegate+Setup.swift */; };
 		CA405455244507C800FE5729 /* UILayoutPriorityExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA405454244507C800FE5729 /* UILayoutPriorityExtension.swift */; };
+		CA4054572445081300FE5729 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4054562445081300FE5729 /* UIViewExtension.swift */; };
 		CA9237E7243857B300810147 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9237E6243857B300810147 /* AppDelegate.swift */; };
 		CA9237EB243857B300810147 /* SongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9237EA243857B300810147 /* SongsViewController.swift */; };
 		CA9237F0243857B600810147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9237EF243857B600810147 /* Assets.xcassets */; };
@@ -60,6 +61,7 @@
 		B20C6F171456587BF79DBEE1 /* Pods-SingSong.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingSong.debug.xcconfig"; path = "Target Support Files/Pods-SingSong/Pods-SingSong.debug.xcconfig"; sourceTree = "<group>"; };
 		CA405450244503AB00FE5729 /* AppDelegate+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Setup.swift"; sourceTree = "<group>"; };
 		CA405454244507C800FE5729 /* UILayoutPriorityExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILayoutPriorityExtension.swift; sourceTree = "<group>"; };
+		CA4054562445081300FE5729 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		CA9237E3243857B300810147 /* SingSong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingSong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9237E6243857B300810147 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA9237EA243857B300810147 /* SongsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				CA405454244507C800FE5729 /* UILayoutPriorityExtension.swift */,
+				CA4054562445081300FE5729 /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				CA405455244507C800FE5729 /* UILayoutPriorityExtension.swift in Sources */,
 				CA9238192439E22700810147 /* MainTabBarController.swift in Sources */,
 				CA9237E7243857B300810147 /* AppDelegate.swift in Sources */,
+				CA4054572445081300FE5729 /* UIViewExtension.swift in Sources */,
 				CA9238012438729400810147 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
