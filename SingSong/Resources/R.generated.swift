@@ -105,6 +105,34 @@ struct R: Rswift.Validatable {
   }
   #endif
 
+  /// This `R.color` struct is generated, and contains static references to 2 colors.
+  struct color {
+    /// Color `bgBlack`.
+    static let bgBlack = Rswift.ColorResource(bundle: R.hostingBundle, name: "bgBlack")
+    /// Color `singSongGreen`.
+    static let singSongGreen = Rswift.ColorResource(bundle: R.hostingBundle, name: "singSongGreen")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "bgBlack", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func bgBlack(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.bgBlack, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "singSongGreen", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func singSongGreen(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.singSongGreen, compatibleWith: traitCollection)
+    }
+    #endif
+
+    fileprivate init() {}
+  }
+
   /// This `R.image` struct is generated, and contains static references to 1 images.
   struct image {
     /// Image `background`.
@@ -116,6 +144,26 @@ struct R: Rswift.Validatable {
       return UIKit.UIImage(resource: R.image.background, compatibleWith: traitCollection)
     }
     #endif
+
+    fileprivate init() {}
+  }
+
+  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
+  struct nib {
+    /// Nib `SongSmallCell`.
+    static let songSmallCell = _R.nib._SongSmallCell()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "SongSmallCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.songSmallCell) instead")
+    static func songSmallCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.songSmallCell)
+    }
+    #endif
+
+    static func songSmallCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> SongSmallCell? {
+      return R.nib.songSmallCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? SongSmallCell
+    }
 
     fileprivate init() {}
   }
@@ -139,6 +187,23 @@ struct _R: Rswift.Validatable {
     try storyboard.validate()
     #endif
   }
+
+  #if os(iOS) || os(tvOS)
+  struct nib {
+    struct _SongSmallCell: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "SongSmallCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> SongSmallCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? SongSmallCell
+      }
+
+      fileprivate init() {}
+    }
+
+    fileprivate init() {}
+  }
+  #endif
 
   #if os(iOS) || os(tvOS)
   struct storyboard: Rswift.Validatable {

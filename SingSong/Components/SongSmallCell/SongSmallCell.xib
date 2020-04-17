@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="SongSmallCell" customModule="SingSong" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TFm-fj-H4r">
+                        <rect key="frame" x="0.0" y="0.0" width="55" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3m-Wx-rlU">
+                                <rect key="frame" x="5" y="15" width="45" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="PZ2-6X-x3u"/>
+                                    <constraint firstAttribute="height" constant="20" id="XOT-ZP-bZj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="singSongGreen"/>
+                        <constraints>
+                            <constraint firstItem="q3m-Wx-rlU" firstAttribute="centerX" secondItem="TFm-fj-H4r" secondAttribute="centerX" id="OzB-ao-rdf"/>
+                            <constraint firstItem="q3m-Wx-rlU" firstAttribute="centerY" secondItem="TFm-fj-H4r" secondAttribute="centerY" id="gIp-ve-Xgp"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ba-Gb-dt0" userLabel="Song Title Label">
+                        <rect key="frame" x="70" y="9" width="290" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="BAe-zc-oIr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ArtistName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixG-96-NI6">
+                        <rect key="frame" x="70" y="31" width="290" height="10"/>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" name="bgBlack"/>
+                <constraints>
+                    <constraint firstItem="TFm-fj-H4r" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="2D7-De-BCO"/>
+                    <constraint firstItem="6ba-Gb-dt0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="6i8-CM-DXr"/>
+                    <constraint firstItem="6ba-Gb-dt0" firstAttribute="leading" secondItem="TFm-fj-H4r" secondAttribute="trailing" constant="15" id="HWC-zT-RSs"/>
+                    <constraint firstItem="TFm-fj-H4r" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="MNX-av-QZU"/>
+                    <constraint firstAttribute="trailing" secondItem="TFm-fj-H4r" secondAttribute="trailing" constant="320" id="bdb-JB-fSz"/>
+                    <constraint firstAttribute="trailing" secondItem="ixG-96-NI6" secondAttribute="trailing" constant="15" id="bsP-dO-FVx"/>
+                    <constraint firstItem="TFm-fj-H4r" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fLk-fz-I27"/>
+                    <constraint firstAttribute="trailing" secondItem="6ba-Gb-dt0" secondAttribute="trailing" constant="15" id="hcU-xZ-XMq"/>
+                    <constraint firstItem="ixG-96-NI6" firstAttribute="leading" secondItem="TFm-fj-H4r" secondAttribute="trailing" constant="15" id="l3P-Wq-nDo"/>
+                    <constraint firstAttribute="bottom" secondItem="ixG-96-NI6" secondAttribute="bottom" constant="9" id="mue-bb-Z2O"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="artistLabel" destination="ixG-96-NI6" id="xrT-ky-4x5"/>
+                <outlet property="keyLabel" destination="q3m-Wx-rlU" id="LHR-Ur-7yE"/>
+                <outlet property="keyView" destination="TFm-fj-H4r" id="rzq-V0-8FS"/>
+                <outlet property="songTItleLabel" destination="6ba-Gb-dt0" id="32i-wP-0x4"/>
+            </connections>
+            <point key="canvasLocation" x="177.536231884058" y="144.64285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="bgBlack">
+            <color red="0.11800000071525574" green="0.11800000071525574" blue="0.11800000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="singSongGreen">
+            <color red="0.37647058823529411" green="0.77254901960784317" blue="0.70588235294117652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

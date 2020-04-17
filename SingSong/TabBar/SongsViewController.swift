@@ -21,7 +21,7 @@ final class SongsViewController: UIViewController {
 
     private func initViews() {
         view.addSubviews(bgView)
-        
+
         bgView.snp.makeConstraintsEqualToSuperview()
 
     }
