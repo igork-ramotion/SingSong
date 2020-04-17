@@ -8,25 +8,24 @@
 
 import UIKit
 
-final class SongSmallCell: UITableViewCell {
+final class SongSmallCell: UITableViewCell, CellReusableXib {
 
-    // UI Parts
+    /// UI Parts
     @IBOutlet weak var keyView: UIView!
     @IBOutlet weak var keyLabel: UILabel!
     @IBOutlet weak var songTItleLabel: UILabel!
     @IBOutlet weak var artistLabel: UILabel!
-    
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+
         initViews()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-    
+
     private func initViews() {
         keyLabel.layer.masksToBounds = false
         keyLabel.layer.cornerRadius = 4

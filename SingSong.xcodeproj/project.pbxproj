@@ -30,6 +30,7 @@
 		CA92382324417ACD00810147 /* SingSongCore.h in Headers */ = {isa = PBXBuildFile; fileRef = CA92382124417ACD00810147 /* SingSongCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA92382624417ACD00810147 /* SingSongCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA92381F24417ACD00810147 /* SingSongCore.framework */; };
 		CA92382724417ACD00810147 /* SingSongCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA92381F24417ACD00810147 /* SingSongCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CABD4F7B244937FB004EC81D /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABD4F7A244937FB004EC81D /* UITableViewCellExtension.swift */; };
 		D1A0C624895D55742AEA3FBE /* Pods_SingSong.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BE0685DB9719AAC3131740 /* Pods_SingSong.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		CA92381F24417ACD00810147 /* SingSongCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SingSongCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA92382124417ACD00810147 /* SingSongCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingSongCore.h; sourceTree = "<group>"; };
 		CA92382224417ACD00810147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CABD4F7A244937FB004EC81D /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
 		DBE9B5296AC23521B270299C /* Pods-SingSongCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingSongCore.release.xcconfig"; path = "Target Support Files/Pods-SingSongCore/Pods-SingSongCore.release.xcconfig"; sourceTree = "<group>"; };
 		E723755B84832081E88D5F27 /* Pods-SingSongCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingSongCore.debug.xcconfig"; path = "Target Support Files/Pods-SingSongCore/Pods-SingSongCore.debug.xcconfig"; sourceTree = "<group>"; };
 		EC0539CCBAFF9FDC393A5669 /* Pods_SingSongCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SingSongCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +135,7 @@
 			children = (
 				CA405454244507C800FE5729 /* UILayoutPriorityExtension.swift */,
 				CA4054562445081300FE5729 /* UIViewExtension.swift */,
+				CABD4F7A244937FB004EC81D /* UITableViewCellExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				CA9238192439E22700810147 /* MainTabBarController.swift in Sources */,
 				CA9237E7243857B300810147 /* AppDelegate.swift in Sources */,
 				CA40545B244508EE00FE5729 /* SongSmallCell.swift in Sources */,
+				CABD4F7B244937FB004EC81D /* UITableViewCellExtension.swift in Sources */,
 				CA4054572445081300FE5729 /* UIViewExtension.swift in Sources */,
 				CA9238012438729400810147 /* R.generated.swift in Sources */,
 			);
