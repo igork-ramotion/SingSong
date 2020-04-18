@@ -180,13 +180,13 @@
 		CA9237E5243857B300810147 /* SingSong */ = {
 			isa = PBXGroup;
 			children = (
-				CA4054582445087900FE5729 /* Components */,
-				CA405452244507B200FE5729 /* Common */,
 				CA9237E6243857B300810147 /* AppDelegate.swift */,
 				CA405450244503AB00FE5729 /* AppDelegate+Setup.swift */,
 				CA9237F1243857B600810147 /* LaunchScreen.storyboard */,
 				CA9237F4243857B600810147 /* Info.plist */,
 				CA9237FF2438718F00810147 /* Resources */,
+				CA4054582445087900FE5729 /* Components */,
+				CA405452244507B200FE5729 /* Common */,
 				CA9238152439E19700810147 /* TabBar */,
 			);
 			path = SingSong;
