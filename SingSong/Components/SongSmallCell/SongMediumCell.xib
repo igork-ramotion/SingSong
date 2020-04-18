@@ -61,16 +61,43 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rbe-u8-UWI" customClass="CosmosView">
-                                        <rect key="frame" x="172" y="38" width="117" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbe-u8-UWI" customClass="CosmosView" customModule="Cosmos">
+                                        <rect key="frame" x="186" y="43" width="95" height="15"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="95" id="HrQ-q7-Zmv"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                                <color key="value" name="singSongGreen"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                                <color key="value" name="singSongGreen"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                                <color key="value" name="singSongGreen"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" name="bgBlack"/>
                                 <constraints>
                                     <constraint firstItem="Zcj-bb-6DW" firstAttribute="leading" secondItem="M4J-RM-HP4" secondAttribute="leading" constant="8" id="82B-Tm-cAV"/>
                                     <constraint firstAttribute="trailing" secondItem="Zcj-bb-6DW" secondAttribute="trailing" constant="8" id="HHo-vZ-zJs"/>
+                                    <constraint firstItem="rbe-u8-UWI" firstAttribute="centerY" secondItem="FvK-Mk-9ti" secondAttribute="centerY" id="Hzz-Ng-Qd3"/>
+                                    <constraint firstAttribute="trailing" secondItem="rbe-u8-UWI" secondAttribute="trailing" constant="8" id="K61-NN-x1v"/>
                                     <constraint firstAttribute="bottom" secondItem="FvK-Mk-9ti" secondAttribute="bottom" constant="10" id="egD-zB-cTj"/>
                                     <constraint firstItem="FvK-Mk-9ti" firstAttribute="leading" secondItem="M4J-RM-HP4" secondAttribute="leading" constant="8" id="tJa-MY-Fxl"/>
                                     <constraint firstItem="Zcj-bb-6DW" firstAttribute="top" secondItem="M4J-RM-HP4" secondAttribute="top" constant="10" id="xph-a5-C4R"/>
