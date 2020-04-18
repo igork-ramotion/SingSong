@@ -56,7 +56,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ArtistName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvK-Mk-9ti">
-                                        <rect key="frame" x="8" y="44" width="73" height="13"/>
+                                        <rect key="frame" x="8" y="44" width="170" height="13"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -99,6 +99,7 @@
                                     <constraint firstItem="rbe-u8-UWI" firstAttribute="centerY" secondItem="FvK-Mk-9ti" secondAttribute="centerY" id="Hzz-Ng-Qd3"/>
                                     <constraint firstAttribute="trailing" secondItem="rbe-u8-UWI" secondAttribute="trailing" constant="8" id="K61-NN-x1v"/>
                                     <constraint firstAttribute="bottom" secondItem="FvK-Mk-9ti" secondAttribute="bottom" constant="10" id="egD-zB-cTj"/>
+                                    <constraint firstItem="rbe-u8-UWI" firstAttribute="leading" secondItem="FvK-Mk-9ti" secondAttribute="trailing" constant="8" id="myE-VS-aAC"/>
                                     <constraint firstItem="FvK-Mk-9ti" firstAttribute="leading" secondItem="M4J-RM-HP4" secondAttribute="leading" constant="8" id="tJa-MY-Fxl"/>
                                     <constraint firstItem="Zcj-bb-6DW" firstAttribute="top" secondItem="M4J-RM-HP4" secondAttribute="top" constant="10" id="xph-a5-C4R"/>
                                 </constraints>
@@ -128,6 +129,16 @@
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="artistLabel" destination="FvK-Mk-9ti" id="Hm8-ED-jhl"/>
+                <outlet property="cardView" destination="GAK-ta-16k" id="2Kw-0T-tLz"/>
+                <outlet property="cosmosView" destination="rbe-u8-UWI" id="jwX-fY-8MV"/>
+                <outlet property="keyButton" destination="3Yt-ha-gzq" id="CXj-4l-MCG"/>
+                <outlet property="keyView" destination="TCG-uP-O5I" id="iRY-y2-mMP"/>
+                <outlet property="nameView" destination="M4J-RM-HP4" id="3sT-xX-VSr"/>
+                <outlet property="rateView" destination="rbe-u8-UWI" id="mA0-ea-CrK"/>
+                <outlet property="songTitleLabel" destination="Zcj-bb-6DW" id="hII-Ob-UBp"/>
+            </connections>
             <point key="canvasLocation" x="177.536231884058" y="162.38839285714286"/>
         </tableViewCell>
     </objects>

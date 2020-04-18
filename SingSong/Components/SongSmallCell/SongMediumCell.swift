@@ -7,18 +7,39 @@
 //
 
 import UIKit
+import Cosmos
 
 final class SongMediumCell: UITableViewCell, CellReusableXib {
+    
+    @IBOutlet weak var keyView: UIView!
+    @IBOutlet weak var keyButton: UIButton!
+    @IBOutlet weak var songTitleLabel: UILabel!
+    @IBOutlet weak var artistLabel: UILabel!
+    @IBOutlet weak var cardView: UIView!
+    @IBOutlet weak var nameView: UIView!
+    @IBOutlet weak var cosmosView: CosmosView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+
+        initViews()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
-    
+
+    private func initViews() {
+        keyView.layer.cornerRadius = 10
+        keyView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
+
+        nameView.layer.cornerRadius = 10
+        nameView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
+
+        keyButton.layer.cornerRadius = 4
+        keyButton.layer.shadowColor = UIColor.black.cgColor
+        keyButton.layer.shadowOffset = CGSize(width: 0, height: 0)
+        keyButton.layer.shadowOpacity = 0.3
+        keyButton.layer.shadowRadius = 3
+    }
 }
