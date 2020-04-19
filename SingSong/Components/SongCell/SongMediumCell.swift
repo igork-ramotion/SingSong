@@ -30,6 +30,8 @@ final class SongMediumCell: UITableViewCell, CellReusableXib {
     }
 
     private func initViews() {
+        selectionStyle = .none
+
         keyView.layer.cornerRadius = 10
         keyView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
 
@@ -41,5 +43,14 @@ final class SongMediumCell: UITableViewCell, CellReusableXib {
         keyButton.layer.shadowOffset = CGSize(width: 0, height: 0)
         keyButton.layer.shadowOpacity = 0.3
         keyButton.layer.shadowRadius = 3
+        keyButton.isEnabled = false
+    }
+
+    func configure(title: String, artist: String, key: Int, rate: Double) {
+        songTitleLabel.text = title
+        artistLabel.text = artist
+        keyButton.setTitle(key.description, for: .normal)
+        cosmosView.rating = rate
+
     }
 }

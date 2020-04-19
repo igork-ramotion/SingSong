@@ -12,6 +12,7 @@
 		CA2AB66E244BAE8F00AE08DF /* SongMediumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA2AB66C244BAE8F00AE08DF /* SongMediumCell.xib */; };
 		CA2AB671244BB53600AE08DF /* SongLargeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2AB66F244BB53600AE08DF /* SongLargeCell.swift */; };
 		CA2AB672244BB53600AE08DF /* SongLargeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA2AB670244BB53600AE08DF /* SongLargeCell.xib */; };
+		CA2AB675244BD97F00AE08DF /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2AB674244BD97F00AE08DF /* Entity.swift */; };
 		CA405451244503AB00FE5729 /* AppDelegate+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA405450244503AB00FE5729 /* AppDelegate+Setup.swift */; };
 		CA405455244507C800FE5729 /* UILayoutPriorityExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA405454244507C800FE5729 /* UILayoutPriorityExtension.swift */; };
 		CA4054572445081300FE5729 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4054562445081300FE5729 /* UIViewExtension.swift */; };
@@ -70,6 +71,7 @@
 		CA2AB66C244BAE8F00AE08DF /* SongMediumCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongMediumCell.xib; sourceTree = "<group>"; };
 		CA2AB66F244BB53600AE08DF /* SongLargeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongLargeCell.swift; sourceTree = "<group>"; };
 		CA2AB670244BB53600AE08DF /* SongLargeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongLargeCell.xib; sourceTree = "<group>"; };
+		CA2AB674244BD97F00AE08DF /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		CA405450244503AB00FE5729 /* AppDelegate+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Setup.swift"; sourceTree = "<group>"; };
 		CA405454244507C800FE5729 /* UILayoutPriorityExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILayoutPriorityExtension.swift; sourceTree = "<group>"; };
 		CA4054562445081300FE5729 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -128,6 +130,14 @@
 				EC0539CCBAFF9FDC393A5669 /* Pods_SingSongCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA2AB673244BD91600AE08DF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				CA2AB674244BD97F00AE08DF /* Entity.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		CA405452244507B200FE5729 /* Common */ = {
@@ -226,6 +236,7 @@
 		CA92382024417ACD00810147 /* SingSongCore */ = {
 			isa = PBXGroup;
 			children = (
+				CA2AB673244BD91600AE08DF /* Entity */,
 				CA92382124417ACD00810147 /* SingSongCore.h */,
 				CA92382224417ACD00810147 /* Info.plist */,
 			);
@@ -323,6 +334,7 @@
 					};
 					CA92381E24417ACD00810147 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -501,6 +513,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA2AB675244BD97F00AE08DF /* Entity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,6 +657,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B20C6F171456587BF79DBEE1 /* Pods-SingSong.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6769Z85BA2;
@@ -663,6 +677,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 46E55AF50458BCC12F66E8D8 /* Pods-SingSong.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6769Z85BA2;
@@ -682,6 +697,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E723755B84832081E88D5F27 /* Pods-SingSongCore.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -699,6 +715,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shota-ito.SingSongCore";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -710,6 +727,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DBE9B5296AC23521B270299C /* Pods-SingSongCore.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;

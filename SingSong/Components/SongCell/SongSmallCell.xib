@@ -103,7 +103,7 @@
                 <outlet property="keyButton" destination="7mF-gE-wOz" id="LRR-Fm-ggW"/>
                 <outlet property="keyView" destination="TFm-fj-H4r" id="rzq-V0-8FS"/>
                 <outlet property="nameView" destination="vk3-ML-3ax" id="SBU-Pc-Ylc"/>
-                <outlet property="songTItleLabel" destination="6ba-Gb-dt0" id="32i-wP-0x4"/>
+                <outlet property="songTitleLabel" destination="6ba-Gb-dt0" id="k1c-wA-mnQ"/>
             </connections>
             <point key="canvasLocation" x="177.536231884058" y="147.65625"/>
         </tableViewCell>

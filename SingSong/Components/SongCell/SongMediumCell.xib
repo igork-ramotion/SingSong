@@ -69,7 +69,7 @@
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="rating">
-                                                <real key="value" value="0.0"/>
+                                                <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
                                                 <integer key="value" value="5"/>
@@ -136,7 +136,6 @@
                 <outlet property="keyButton" destination="3Yt-ha-gzq" id="CXj-4l-MCG"/>
                 <outlet property="keyView" destination="TCG-uP-O5I" id="iRY-y2-mMP"/>
                 <outlet property="nameView" destination="M4J-RM-HP4" id="3sT-xX-VSr"/>
-                <outlet property="rateView" destination="rbe-u8-UWI" id="mA0-ea-CrK"/>
                 <outlet property="songTitleLabel" destination="Zcj-bb-6DW" id="hII-Ob-UBp"/>
             </connections>
             <point key="canvasLocation" x="177.536231884058" y="162.38839285714286"/>

@@ -221,18 +221,33 @@ struct R: Rswift.Validatable {
 struct _R: Rswift.Validatable {
   static func validate() throws {
     #if os(iOS) || os(tvOS)
+    try nib.validate()
+    #endif
+    #if os(iOS) || os(tvOS)
     try storyboard.validate()
     #endif
   }
 
   #if os(iOS) || os(tvOS)
-  struct nib {
-    struct _SongLargeCell: Rswift.NibResourceType {
+  struct nib: Rswift.Validatable {
+    static func validate() throws {
+      try _SongLargeCell.validate()
+    }
+
+    struct _SongLargeCell: Rswift.NibResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "SongLargeCell"
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> SongLargeCell? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? SongLargeCell
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "noImage", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'noImage' is used in nib 'SongLargeCell', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "bgBlack", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'bgBlack' is used in storyboard 'SongLargeCell', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "singSongGreen", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'singSongGreen' is used in storyboard 'SongLargeCell', but couldn't be loaded.") }
+        }
       }
 
       fileprivate init() {}

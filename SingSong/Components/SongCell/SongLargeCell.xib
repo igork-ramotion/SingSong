@@ -70,7 +70,7 @@
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="rating">
-                                                <real key="value" value="0.0"/>
+                                                <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
                                                 <integer key="value" value="5"/>
@@ -138,6 +138,16 @@
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="artistLabel" destination="ojA-iJ-t0t" id="ABR-qi-LPu"/>
+                <outlet property="cardView" destination="3z6-eX-heM" id="yX2-ZA-htH"/>
+                <outlet property="cosmosView" destination="2rk-Pi-r5J" id="9YE-SI-rGN"/>
+                <outlet property="coverView" destination="YED-aC-AFz" id="GT8-3V-4Uc"/>
+                <outlet property="keyButton" destination="5Zp-x0-4Sz" id="D1s-U4-0IK"/>
+                <outlet property="keyView" destination="Y3v-p0-hpE" id="Yay-tT-Xgi"/>
+                <outlet property="nameView" destination="r4S-Gr-BAp" id="lWP-lt-8Jb"/>
+                <outlet property="titleLabel" destination="kt6-Pi-IeA" id="TBJ-FV-bAU"/>
+            </connections>
             <point key="canvasLocation" x="177.536231884058" y="167.41071428571428"/>
         </tableViewCell>
     </objects>
