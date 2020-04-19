@@ -133,10 +133,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 1 images.
+  /// This `R.image` struct is generated, and contains static references to 2 images.
   struct image {
     /// Image `background`.
     static let background = Rswift.ImageResource(bundle: R.hostingBundle, name: "background")
+    /// Image `noImage`.
+    static let noImage = Rswift.ImageResource(bundle: R.hostingBundle, name: "noImage")
 
     #if os(iOS) || os(tvOS)
     /// `UIImage(named: "background", bundle: ..., traitCollection: ...)`
@@ -145,13 +147,40 @@ struct R: Rswift.Validatable {
     }
     #endif
 
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "noImage", bundle: ..., traitCollection: ...)`
+    static func noImage(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.noImage, compatibleWith: traitCollection)
+    }
+    #endif
+
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 3 nibs.
   struct nib {
+    /// Nib `SongLargeCell`.
+    static let songLargeCell = _R.nib._SongLargeCell()
+    /// Nib `SongMediumCell`.
+    static let songMediumCell = _R.nib._SongMediumCell()
     /// Nib `SongSmallCell`.
     static let songSmallCell = _R.nib._SongSmallCell()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "SongLargeCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.songLargeCell) instead")
+    static func songLargeCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.songLargeCell)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "SongMediumCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.songMediumCell) instead")
+    static func songMediumCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.songMediumCell)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UINib(name: "SongSmallCell", in: bundle)`
@@ -160,6 +189,14 @@ struct R: Rswift.Validatable {
       return UIKit.UINib(resource: R.nib.songSmallCell)
     }
     #endif
+
+    static func songLargeCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> SongLargeCell? {
+      return R.nib.songLargeCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? SongLargeCell
+    }
+
+    static func songMediumCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> SongMediumCell? {
+      return R.nib.songMediumCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? SongMediumCell
+    }
 
     static func songSmallCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> SongSmallCell? {
       return R.nib.songSmallCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? SongSmallCell
@@ -190,6 +227,28 @@ struct _R: Rswift.Validatable {
 
   #if os(iOS) || os(tvOS)
   struct nib {
+    struct _SongLargeCell: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "SongLargeCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> SongLargeCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? SongLargeCell
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _SongMediumCell: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "SongMediumCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> SongMediumCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? SongMediumCell
+      }
+
+      fileprivate init() {}
+    }
+
     struct _SongSmallCell: Rswift.NibResourceType {
       let bundle = R.hostingBundle
       let name = "SongSmallCell"

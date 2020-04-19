@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="SongLargeCell" customModule="SingSong" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3z6-eX-heM" userLabel="CardView">
+                        <rect key="frame" x="8" y="4" width="359" height="82"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y3v-p0-hpE">
+                                <rect key="frame" x="0.0" y="0.0" width="70" height="82"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Zp-x0-4Sz">
+                                        <rect key="frame" x="10" y="26" width="50" height="30"/>
+                                        <color key="backgroundColor" name="singSongGreen"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="BrW-jI-b8U"/>
+                                            <constraint firstAttribute="width" constant="50" id="JaS-KR-0sr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                        <state key="normal" title="+4">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="singSongGreen"/>
+                                <constraints>
+                                    <constraint firstItem="5Zp-x0-4Sz" firstAttribute="centerX" secondItem="Y3v-p0-hpE" secondAttribute="centerX" id="8a5-6R-pEk"/>
+                                    <constraint firstAttribute="width" constant="70" id="8hB-ag-1nw"/>
+                                    <constraint firstItem="5Zp-x0-4Sz" firstAttribute="centerY" secondItem="Y3v-p0-hpE" secondAttribute="centerY" id="xdK-yr-qCL"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r4S-Gr-BAp" userLabel="NameView">
+                                <rect key="frame" x="70" y="0.0" width="289" height="82"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kt6-Pi-IeA" userLabel="Song Title Label">
+                                        <rect key="frame" x="81" y="17" width="273" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="V85-Pd-N9g"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noImage" translatesAutoresizingMaskIntoConstraints="NO" id="YED-aC-AFz">
+                                        <rect key="frame" x="8" y="8.5" width="65" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="6rY-nt-1qF"/>
+                                            <constraint firstAttribute="width" constant="65" id="AD5-oa-DHL"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2rk-Pi-r5J" customClass="CosmosView" customModule="Cosmos">
+                                        <rect key="frame" x="186" y="50" width="95" height="15"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="95" id="l8w-H5-eCv"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                                <color key="value" name="singSongGreen"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                                <color key="value" name="singSongGreen"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                                <color key="value" name="singSongGreen"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ArtistName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojA-iJ-t0t">
+                                        <rect key="frame" x="81" y="51" width="97" height="13"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="bgBlack"/>
+                                <constraints>
+                                    <constraint firstItem="kt6-Pi-IeA" firstAttribute="top" secondItem="r4S-Gr-BAp" secondAttribute="top" constant="17" id="35R-xc-jPf"/>
+                                    <constraint firstItem="YED-aC-AFz" firstAttribute="centerY" secondItem="r4S-Gr-BAp" secondAttribute="centerY" id="7a5-5Z-OP0"/>
+                                    <constraint firstAttribute="trailing" secondItem="kt6-Pi-IeA" secondAttribute="trailing" constant="-65" id="CyT-m1-g3Q"/>
+                                    <constraint firstItem="2rk-Pi-r5J" firstAttribute="centerY" secondItem="ojA-iJ-t0t" secondAttribute="centerY" id="HMN-9p-7HP"/>
+                                    <constraint firstItem="kt6-Pi-IeA" firstAttribute="leading" secondItem="YED-aC-AFz" secondAttribute="trailing" constant="8" id="SVW-yv-4eL"/>
+                                    <constraint firstItem="ojA-iJ-t0t" firstAttribute="leading" secondItem="YED-aC-AFz" secondAttribute="trailing" constant="8" id="YDY-np-UbU"/>
+                                    <constraint firstAttribute="bottom" secondItem="ojA-iJ-t0t" secondAttribute="bottom" constant="18" id="ZUu-nW-Y25"/>
+                                    <constraint firstAttribute="trailing" secondItem="2rk-Pi-r5J" secondAttribute="trailing" constant="8" id="iDC-Aw-v9U"/>
+                                    <constraint firstItem="2rk-Pi-r5J" firstAttribute="leading" secondItem="ojA-iJ-t0t" secondAttribute="trailing" constant="8" id="nRI-iv-Zs0"/>
+                                    <constraint firstItem="YED-aC-AFz" firstAttribute="leading" secondItem="r4S-Gr-BAp" secondAttribute="leading" constant="8" id="xFP-PP-lZg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="r4S-Gr-BAp" firstAttribute="leading" secondItem="Y3v-p0-hpE" secondAttribute="trailing" id="4bK-Ou-ayr"/>
+                            <constraint firstItem="Y3v-p0-hpE" firstAttribute="top" secondItem="3z6-eX-heM" secondAttribute="top" id="58t-lR-p5Q"/>
+                            <constraint firstAttribute="trailing" secondItem="r4S-Gr-BAp" secondAttribute="trailing" id="6dN-7V-c2z"/>
+                            <constraint firstItem="r4S-Gr-BAp" firstAttribute="top" secondItem="3z6-eX-heM" secondAttribute="top" id="8FT-RX-K0p"/>
+                            <constraint firstItem="Y3v-p0-hpE" firstAttribute="leading" secondItem="3z6-eX-heM" secondAttribute="leading" id="L7v-N7-I2O"/>
+                            <constraint firstAttribute="bottom" secondItem="Y3v-p0-hpE" secondAttribute="bottom" id="oBa-2G-tMf"/>
+                            <constraint firstAttribute="bottom" secondItem="r4S-Gr-BAp" secondAttribute="bottom" id="snh-iw-Cgc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="3z6-eX-heM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="C8d-8q-R2B"/>
+                    <constraint firstAttribute="bottom" secondItem="3z6-eX-heM" secondAttribute="bottom" constant="4" id="KiJ-4j-C90"/>
+                    <constraint firstItem="3z6-eX-heM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="PEb-la-1fR"/>
+                    <constraint firstAttribute="trailing" secondItem="3z6-eX-heM" secondAttribute="trailing" constant="8" id="XhD-x8-hWx"/>
+                    <constraint firstItem="3z6-eX-heM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="cAa-hJ-Beb"/>
+                    <constraint firstItem="3z6-eX-heM" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ksU-i8-gwT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="177.536231884058" y="167.41071428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="noImage" width="65" height="65"/>
+        <namedColor name="bgBlack">
+            <color red="0.11800000071525574" green="0.11800000071525574" blue="0.11800000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="singSongGreen">
+            <color red="0.37647058823529411" green="0.77254901960784317" blue="0.70588235294117652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

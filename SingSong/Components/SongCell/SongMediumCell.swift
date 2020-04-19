@@ -10,7 +10,7 @@ import UIKit
 import Cosmos
 
 final class SongMediumCell: UITableViewCell, CellReusableXib {
-    
+
     @IBOutlet weak var keyView: UIView!
     @IBOutlet weak var keyButton: UIButton!
     @IBOutlet weak var songTitleLabel: UILabel!
