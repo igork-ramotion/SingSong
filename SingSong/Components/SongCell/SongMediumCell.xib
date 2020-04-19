@@ -47,7 +47,7 @@
                                 <rect key="frame" x="70" y="0.0" width="289" height="67"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcj-bb-6DW" userLabel="Song Title Label">
-                                        <rect key="frame" x="8" y="10" width="273" height="20"/>
+                                        <rect key="frame" x="8" y="12" width="273" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="y5l-KX-kty"/>
                                         </constraints>
@@ -56,13 +56,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ArtistName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvK-Mk-9ti">
-                                        <rect key="frame" x="8" y="44" width="170" height="13"/>
+                                        <rect key="frame" x="8" y="42" width="170" height="13"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbe-u8-UWI" customClass="CosmosView" customModule="Cosmos">
-                                        <rect key="frame" x="186" y="43" width="95" height="15"/>
+                                        <rect key="frame" x="186" y="41" width="95" height="15"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="95" id="HrQ-q7-Zmv"/>
@@ -98,10 +98,10 @@
                                     <constraint firstAttribute="trailing" secondItem="Zcj-bb-6DW" secondAttribute="trailing" constant="8" id="HHo-vZ-zJs"/>
                                     <constraint firstItem="rbe-u8-UWI" firstAttribute="centerY" secondItem="FvK-Mk-9ti" secondAttribute="centerY" id="Hzz-Ng-Qd3"/>
                                     <constraint firstAttribute="trailing" secondItem="rbe-u8-UWI" secondAttribute="trailing" constant="8" id="K61-NN-x1v"/>
-                                    <constraint firstAttribute="bottom" secondItem="FvK-Mk-9ti" secondAttribute="bottom" constant="10" id="egD-zB-cTj"/>
+                                    <constraint firstAttribute="bottom" secondItem="FvK-Mk-9ti" secondAttribute="bottom" constant="12" id="egD-zB-cTj"/>
                                     <constraint firstItem="rbe-u8-UWI" firstAttribute="leading" secondItem="FvK-Mk-9ti" secondAttribute="trailing" constant="8" id="myE-VS-aAC"/>
                                     <constraint firstItem="FvK-Mk-9ti" firstAttribute="leading" secondItem="M4J-RM-HP4" secondAttribute="leading" constant="8" id="tJa-MY-Fxl"/>
-                                    <constraint firstItem="Zcj-bb-6DW" firstAttribute="top" secondItem="M4J-RM-HP4" secondAttribute="top" constant="10" id="xph-a5-C4R"/>
+                                    <constraint firstItem="Zcj-bb-6DW" firstAttribute="top" secondItem="M4J-RM-HP4" secondAttribute="top" constant="12" id="xph-a5-C4R"/>
                                 </constraints>
                             </view>
                         </subviews>

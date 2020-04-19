@@ -47,7 +47,7 @@
                                 <rect key="frame" x="70" y="0.0" width="289" height="67"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ba-Gb-dt0" userLabel="Song Title Label">
-                                        <rect key="frame" x="8" y="10" width="273" height="20"/>
+                                        <rect key="frame" x="8" y="12" width="273" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="BAe-zc-oIr"/>
                                         </constraints>
@@ -56,7 +56,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ArtistName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixG-96-NI6">
-                                        <rect key="frame" x="8" y="44" width="273" height="13"/>
+                                        <rect key="frame" x="8" y="42" width="273" height="13"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -65,9 +65,9 @@
                                 <color key="backgroundColor" name="bgBlack"/>
                                 <constraints>
                                     <constraint firstItem="ixG-96-NI6" firstAttribute="leading" secondItem="vk3-ML-3ax" secondAttribute="leading" constant="8" id="X0y-Ws-2aO"/>
-                                    <constraint firstItem="6ba-Gb-dt0" firstAttribute="top" secondItem="vk3-ML-3ax" secondAttribute="top" constant="10" id="Xlb-2x-SfG"/>
+                                    <constraint firstItem="6ba-Gb-dt0" firstAttribute="top" secondItem="vk3-ML-3ax" secondAttribute="top" constant="12" id="Xlb-2x-SfG"/>
                                     <constraint firstAttribute="trailing" secondItem="ixG-96-NI6" secondAttribute="trailing" constant="8" id="hBp-7T-uOk"/>
-                                    <constraint firstAttribute="bottom" secondItem="ixG-96-NI6" secondAttribute="bottom" constant="10" id="xBt-JL-A9c"/>
+                                    <constraint firstAttribute="bottom" secondItem="ixG-96-NI6" secondAttribute="bottom" constant="12" id="xBt-JL-A9c"/>
                                     <constraint firstItem="6ba-Gb-dt0" firstAttribute="leading" secondItem="vk3-ML-3ax" secondAttribute="leading" constant="8" id="yG3-yP-znP"/>
                                     <constraint firstAttribute="trailing" secondItem="6ba-Gb-dt0" secondAttribute="trailing" constant="8" id="yWj-db-qid"/>
                                 </constraints>
