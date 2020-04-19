@@ -47,11 +47,11 @@
                                 <rect key="frame" x="70" y="0.0" width="289" height="82"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kt6-Pi-IeA" userLabel="Song Title Label">
-                                        <rect key="frame" x="81" y="17" width="273" height="20"/>
+                                        <rect key="frame" x="81" y="17" width="200" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="V85-Pd-N9g"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -103,7 +103,7 @@
                                 <constraints>
                                     <constraint firstItem="kt6-Pi-IeA" firstAttribute="top" secondItem="r4S-Gr-BAp" secondAttribute="top" constant="17" id="35R-xc-jPf"/>
                                     <constraint firstItem="YED-aC-AFz" firstAttribute="centerY" secondItem="r4S-Gr-BAp" secondAttribute="centerY" id="7a5-5Z-OP0"/>
-                                    <constraint firstAttribute="trailing" secondItem="kt6-Pi-IeA" secondAttribute="trailing" constant="-65" id="CyT-m1-g3Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="kt6-Pi-IeA" secondAttribute="trailing" constant="8" id="CyT-m1-g3Q"/>
                                     <constraint firstItem="2rk-Pi-r5J" firstAttribute="centerY" secondItem="ojA-iJ-t0t" secondAttribute="centerY" id="HMN-9p-7HP"/>
                                     <constraint firstItem="kt6-Pi-IeA" firstAttribute="leading" secondItem="YED-aC-AFz" secondAttribute="trailing" constant="8" id="SVW-yv-4eL"/>
                                     <constraint firstItem="ojA-iJ-t0t" firstAttribute="leading" secondItem="YED-aC-AFz" secondAttribute="trailing" constant="8" id="YDY-np-UbU"/>

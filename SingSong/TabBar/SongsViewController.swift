@@ -51,6 +51,15 @@ final class SongsViewController: UIViewController {
     }
 
     private func initViews() {
+        navigationController?.navigationBar.barTintColor = R.color.bgBlack()
+        let navigationBackgroundView = self.navigationController?.navigationBar.subviews.first
+        navigationBackgroundView?.alpha = 0.9
+        navigationItem.title = "Songs"
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+
+        tabBarController?.tabBar.barTintColor = R.color.bgBlack()
+        tabBarController?.tabBar.alpha = 0.9
+
         view.addSubviews(bgView, tableView)
 
         bgView.snp.makeConstraintsEqualToSuperview()
