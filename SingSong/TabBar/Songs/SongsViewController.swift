@@ -9,6 +9,7 @@
 import UIKit
 import SingSongCore
 import SnapKit
+import ViewAnimator
 
 struct DummySong {
     public let title: String
@@ -50,6 +51,10 @@ final class SongsViewController: UIViewController {
         initViews()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        tableViewAnimation()
+    }
+
     private func initViews() {
         navigationController?.navigationBar.barTintColor = R.color.bgBlack()
         let navigationBackgroundView = self.navigationController?.navigationBar.subviews.first
@@ -84,13 +89,24 @@ final class SongsViewController: UIViewController {
         case .small:
             type = .medium
             tableView.reloadData()
+            tableViewAnimation()
         case .medium:
             type = .large
             tableView.reloadData()
+            tableViewAnimation()
         case .large:
             type = .small
             tableView.reloadData()
+            tableViewAnimation()
         }
+    }
+
+    private func tableViewAnimation(delay: Double = 0) {
+        let fromAnimation = AnimationType.from(direction: .right, offset: 30)
+        let zoomAnimation = AnimationType.zoom(scale: 0.1)
+        UIView.animate(views: tableView.visibleCells,
+                       animations: [fromAnimation, zoomAnimation],
+                       delay: delay)
     }
 }
 
