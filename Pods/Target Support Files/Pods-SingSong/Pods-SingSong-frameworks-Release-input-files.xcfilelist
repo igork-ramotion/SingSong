@@ -14,5 +14,4 @@ ${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework
 ${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
 ${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework
 ${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework
-${BUILT_PRODUCTS_DIR}/VegaScrollFlowLayout/VegaScrollFlowLayout.framework
 ${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework
