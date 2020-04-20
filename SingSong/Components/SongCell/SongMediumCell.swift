@@ -9,8 +9,14 @@
 import UIKit
 import Cosmos
 
+protocol SongsViewControllerDelegate: class {
+    func didTouchCosmosView()
+    func didFinishTouchCosmosView()
+}
+
 final class SongMediumCell: UITableViewCell, CellReusableXib {
 
+    /// UI Parts
     @IBOutlet weak var keyView: UIView!
     @IBOutlet weak var keyButton: UIButton!
     @IBOutlet weak var songTitleLabel: UILabel!
@@ -18,6 +24,9 @@ final class SongMediumCell: UITableViewCell, CellReusableXib {
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var nameView: UIView!
     @IBOutlet weak var cosmosView: CosmosView!
+
+    /// Propaties
+    weak var delegate: SongsViewControllerDelegate?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -44,6 +53,9 @@ final class SongMediumCell: UITableViewCell, CellReusableXib {
         keyButton.layer.shadowOpacity = 0.3
         keyButton.layer.shadowRadius = 3
         keyButton.isEnabled = false
+
+        cosmosView.didTouchCosmos = { _ in self.delegate?.didTouchCosmosView() }
+        cosmosView.didFinishTouchingCosmos = { _ in self.delegate?.didFinishTouchCosmosView() }
     }
 
     func configure(title: String, artist: String, key: Int, rate: Double) {
@@ -51,6 +63,6 @@ final class SongMediumCell: UITableViewCell, CellReusableXib {
         artistLabel.text = artist
         keyButton.setTitle(key.description, for: .normal)
         cosmosView.rating = rate
-
     }
+
 }

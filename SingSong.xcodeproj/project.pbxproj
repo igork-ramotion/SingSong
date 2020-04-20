@@ -132,6 +132,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CA1734A1244D5E07003ACF23 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				CA9237EA243857B300810147 /* SongsViewController.swift */,
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
 		CA2AB673244BD91600AE08DF /* Entity */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,7 +234,7 @@
 		CA9238152439E19700810147 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				CA9237EA243857B300810147 /* SongsViewController.swift */,
+				CA1734A1244D5E07003ACF23 /* Songs */,
 				CA9238162439E1F000810147 /* ViewController2.swift */,
 				CA9238182439E22700810147 /* MainTabBarController.swift */,
 			);

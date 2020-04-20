@@ -31,6 +31,7 @@ target 'SingSong' do
   pod 'SwiftMessages'
   pod 'Parchment'
   pod 'Cosmos', '~> 21.0'
+  pod 'SideMenu', '~> 6.0'
 
   # Animation
 

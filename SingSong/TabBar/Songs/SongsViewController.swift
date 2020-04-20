@@ -56,6 +56,11 @@ final class SongsViewController: UIViewController {
         navigationBackgroundView?.alpha = 0.9
         navigationItem.title = "Songs"
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Display",
+                                                            style: .plain,
+                                                            target: self,
+                                                            action: #selector(self.didTapDisplayButton))
+        navigationItem.rightBarButtonItem?.tintColor = R.color.singSongGreen()
 
         tabBarController?.tabBar.barTintColor = R.color.bgBlack()
         tabBarController?.tabBar.alpha = 0.9
@@ -71,6 +76,21 @@ final class SongsViewController: UIViewController {
         tableView.dataSource = self
         tableView.backgroundColor = .clear
         tableView.snp.makeConstraintsEqualToSuperview()
+    }
+
+    @objc
+    private func didTapDisplayButton() {
+        switch type {
+        case .small:
+            type = .medium
+            tableView.reloadData()
+        case .medium:
+            type = .large
+            tableView.reloadData()
+        case .large:
+            type = .small
+            tableView.reloadData()
+        }
     }
 }
 
@@ -93,6 +113,7 @@ extension SongsViewController: UITableViewDataSource {
             return cell
         case .medium:
             let cell = tableView.dequeueReusableCell(for: indexPath, as: SongMediumCell.self)
+            cell.delegate = self
             cell.configure(title: list[indexPath.row].title,
                            artist: list[indexPath.row].artist,
                            key: list[indexPath.row].key,
@@ -123,5 +144,16 @@ extension SongsViewController: UITableViewDataSource {
 }
 
 extension SongsViewController: UITableViewDelegate {
+
+}
+
+extension SongsViewController: SongsViewControllerDelegate {
+    func didTouchCosmosView() {
+        tableView.isScrollEnabled = false
+    }
+
+    func didFinishTouchCosmosView() {
+        tableView.isScrollEnabled = true
+    }
 
 }
