@@ -18,7 +18,8 @@ class MainTabBarController: UITabBarController {
 
     func initTabBar() {
         let vc = SongsViewController()
-        vc.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 0)
+        vc.tabBarItem.image = R.image.songTab()
+        vc.tabBarItem.title = "Songs"
         let nvc = UINavigationController(rootViewController: vc)
 
         // Green tab

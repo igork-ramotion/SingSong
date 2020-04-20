@@ -11,6 +11,6 @@ import UIKit
 
 extension AppDelegate {
     func setupAppearance() {
-        print("setupAppearance")
+        UITabBar.appearance().tintColor = R.color.singSongGreen()
     }
 }
