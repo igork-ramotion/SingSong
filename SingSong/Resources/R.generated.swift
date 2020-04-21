@@ -133,19 +133,82 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 3 images.
+  /// This `R.image` struct is generated, and contains static references to 10 images.
   struct image {
+    /// Image `Add_Button`.
+    static let add_Button = Rswift.ImageResource(bundle: R.hostingBundle, name: "Add_Button")
+    /// Image `ShowLyrycs`.
+    static let showLyrycs = Rswift.ImageResource(bundle: R.hostingBundle, name: "ShowLyrycs")
     /// Image `background`.
     static let background = Rswift.ImageResource(bundle: R.hostingBundle, name: "background")
+    /// Image `key_minus_off`.
+    static let key_minus_off = Rswift.ImageResource(bundle: R.hostingBundle, name: "key_minus_off")
+    /// Image `key_minus_on`.
+    static let key_minus_on = Rswift.ImageResource(bundle: R.hostingBundle, name: "key_minus_on")
+    /// Image `key_plus_off`.
+    static let key_plus_off = Rswift.ImageResource(bundle: R.hostingBundle, name: "key_plus_off")
+    /// Image `key_plus_on`.
+    static let key_plus_on = Rswift.ImageResource(bundle: R.hostingBundle, name: "key_plus_on")
+    /// Image `key_view`.
+    static let key_view = Rswift.ImageResource(bundle: R.hostingBundle, name: "key_view")
     /// Image `noImage`.
     static let noImage = Rswift.ImageResource(bundle: R.hostingBundle, name: "noImage")
     /// Image `songTab`.
     static let songTab = Rswift.ImageResource(bundle: R.hostingBundle, name: "songTab")
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "Add_Button", bundle: ..., traitCollection: ...)`
+    static func add_Button(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.add_Button, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "ShowLyrycs", bundle: ..., traitCollection: ...)`
+    static func showLyrycs(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.showLyrycs, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "background", bundle: ..., traitCollection: ...)`
     static func background(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.background, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "key_minus_off", bundle: ..., traitCollection: ...)`
+    static func key_minus_off(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.key_minus_off, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "key_minus_on", bundle: ..., traitCollection: ...)`
+    static func key_minus_on(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.key_minus_on, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "key_plus_off", bundle: ..., traitCollection: ...)`
+    static func key_plus_off(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.key_plus_off, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "key_plus_on", bundle: ..., traitCollection: ...)`
+    static func key_plus_on(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.key_plus_on, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "key_view", bundle: ..., traitCollection: ...)`
+    static func key_view(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.key_view, compatibleWith: traitCollection)
     }
     #endif
 
@@ -241,6 +304,7 @@ struct _R: Rswift.Validatable {
   struct nib: Rswift.Validatable {
     static func validate() throws {
       try _SongLargeCell.validate()
+      try _SongSmallCell.validate()
     }
 
     struct _SongLargeCell: Rswift.NibResourceType, Rswift.Validatable {
@@ -273,12 +337,24 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
 
-    struct _SongSmallCell: Rswift.NibResourceType {
+    struct _SongSmallCell: Rswift.NibResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "SongSmallCell"
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> SongSmallCell? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? SongSmallCell
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "Add_Button", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Add_Button' is used in nib 'SongSmallCell', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "ShowLyrycs", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'ShowLyrycs' is used in nib 'SongSmallCell', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "key_minus_on", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'key_minus_on' is used in nib 'SongSmallCell', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "key_plus_on", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'key_plus_on' is used in nib 'SongSmallCell', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "key_view", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'key_view' is used in nib 'SongSmallCell', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "bgBlack", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'bgBlack' is used in storyboard 'SongSmallCell', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "singSongGreen", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'singSongGreen' is used in storyboard 'SongSmallCell', but couldn't be loaded.") }
+        }
       }
 
       fileprivate init() {}

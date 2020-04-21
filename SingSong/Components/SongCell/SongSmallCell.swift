@@ -7,17 +7,18 @@
 //
 
 import UIKit
+import FoldingCell
 
-final class SongSmallCell: UITableViewCell, CellReusableXib {
+final class SongSmallCell: FoldingCell, CellReusableXib {
 
     /// UI Parts
     @IBOutlet weak var keyView: UIView!
     @IBOutlet weak var keyButton: UIButton!
     @IBOutlet weak var songTitleLabel: UILabel!
     @IBOutlet weak var artistLabel: UILabel!
-    @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var nameView: UIView!
 
+    /// Propaties
     override func awakeFromNib() {
         super.awakeFromNib()
 
@@ -49,6 +50,13 @@ final class SongSmallCell: UITableViewCell, CellReusableXib {
         songTitleLabel.text = title
         artistLabel.text = artist
         keyButton.setTitle(key.description, for: .normal)
+    }
+
+    override func animationDuration(_ itemIndex: NSInteger, type: AnimationType) -> TimeInterval {
+
+        // durations count equal it itemCount
+        let durations = [0.33, 0.26, 0.26] // timing animation for each view
+        return durations[itemIndex]
     }
 
 }

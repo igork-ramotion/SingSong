@@ -10,6 +10,7 @@ import UIKit
 import SingSongCore
 import SnapKit
 import ViewAnimator
+import FoldingCell
 
 struct DummySong {
     public let title: String
@@ -17,6 +18,13 @@ struct DummySong {
     public let key: Int
     public let rate: Double
     public let cover: UIImage
+}
+
+private struct C {
+    struct CellHeight {
+        static let close: CGFloat = 67.0
+        static let open: CGFloat = 138.0
+    }
 }
 
 final class SongsViewController: UIViewController {
@@ -43,7 +51,10 @@ final class SongsViewController: UIViewController {
         case large = "Large"
     }
     private let kinds: [Kind] = [.small, .medium, .large]
-    private var type: Kind = .large
+    private var type: Kind = .medium
+
+    var cellHeights = (0..<2).map { _ in C.CellHeight.close }
+    var cellIsCollapsed = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -144,7 +155,6 @@ extension SongsViewController: UITableViewDataSource {
                            cover: list[indexPath.row].cover)
             return cell
         }
-
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -155,6 +165,45 @@ extension SongsViewController: UITableViewDataSource {
             return 90
         }
 
+    }
+
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return cellHeights[indexPath.row]
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard case let cell as FoldingCell = tableView.cellForRow(at: indexPath) else {
+            return
+        }
+
+        var duration = 0.0
+        if cellIsCollapsed {
+            cellHeights[indexPath.row] = C.CellHeight.open
+            cell.unfold(true, animated: true, completion: nil)
+            duration = 0.5
+            cellIsCollapsed = false
+        } else {
+            cellHeights[indexPath.row] = C.CellHeight.close
+            cell.unfold(false, animated: true, completion: nil)
+            duration = 0.8
+            cellIsCollapsed = true
+        }
+
+        UIView.animate(withDuration: duration, animations: {
+            tableView.beginUpdates()
+            tableView.endUpdates()
+        }, completion: nil)
+
+    }
+
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if case let cell as FoldingCell = cell {
+            if cellHeights[indexPath.row] == C.CellHeight.close {
+                cell.setSelected(false, animated: false)
+            } else {
+                cell.setSelected(true, animated: false)
+            }
+        }
     }
 
 }
