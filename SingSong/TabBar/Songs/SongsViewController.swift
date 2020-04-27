@@ -51,7 +51,7 @@ final class SongsViewController: UIViewController {
         case large = "Large"
     }
     private let kinds: [Kind] = [.small, .medium, .large]
-    private var type: Kind = .medium
+    private var type: Kind = .small
 
     var cellHeights = (0..<2).map { _ in C.CellHeight.close }
     var cellIsCollapsed = false

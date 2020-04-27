@@ -307,6 +307,7 @@
             <connections>
                 <outlet property="artistLabel" destination="ixG-96-NI6" id="xrT-ky-4x5"/>
                 <outlet property="containerView" destination="aAX-Jv-lpQ" id="JTN-BQ-PJc"/>
+                <outlet property="foregroundView" destination="ik8-Vl-afQ" id="ogF-1n-eZ3"/>
                 <outlet property="keyButton" destination="7mF-gE-wOz" id="LRR-Fm-ggW"/>
                 <outlet property="keyView" destination="TFm-fj-H4r" id="rzq-V0-8FS"/>
                 <outlet property="nameView" destination="vk3-ML-3ax" id="SBU-Pc-Ylc"/>
